@@ -37,7 +37,14 @@ services:
       - MYSQL_PASSWORD=local123
     container_name: db_percona
 
+  mongo:
+    image: mongo:4
+    ports: 
+      - "27017:27017"
+    container_name: db_mongo
+
 volumes:
   redis_data:
   nginx_data:
   percona_data:
+  mongo_data:
