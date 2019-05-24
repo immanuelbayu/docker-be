@@ -23,7 +23,7 @@ services:
   php:
     image: php:7.0-fpm-jessie
     volumes:
-      - $HOME/Documents/project/local:/usr/share/nginx/html
+      - $HOME/Documents/project/httpdocs:/var/www/html
     container_name: be_php
 
   db:
